@@ -1,0 +1,21 @@
+name: ThorMace
+version: 1.0.0
+main: com.denis.thormace.ThorMace
+api-version: '1.21'
+author: Denis
+description: Thor'un cekici gibi ozel mace - vurunca yildirim ve blok patlamasi.
+commands:
+  thormace:
+    description: Thor Mace verir / config yeniler
+    usage: /thormace [oyuncu|reload]
+    aliases: [thor, mjolnir]
+permissions:
+  thormace.give:
+    description: /thormace ile mace alabilir
+    default: op
+  thormace.use:
+    description: Mace'in ozelligini kullanabilir
+    default: true
+  thormace.admin:
+    description: /thormace reload
+    default: op

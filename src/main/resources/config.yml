@@ -1,0 +1,43 @@
+# ThorMace ayarlari
+
+item:
+  name: "&b&lMjölnir"
+  lore:
+    - "&7Thor'un çekici."
+    - "&eVurduğun kişiye yıldırım düşer!"
+
+lightning:
+  count: 5                 # kac kez yildirim
+  interval-ticks: 6        # yildirimlar arasi sure (20 tick = 1 sn)
+  damage-per-strike: 3.0   # her yildirim icin ekstra hasar (1.5 kalp). 0 = hasar yok
+  real: false              # true = gercek yildirim (yangin + vurana da zarar verebilir)
+
+blast:
+  radius: 5                # blok ucusma yaricapi
+  max-blocks: 200          # performans icin ust sinir
+  duration-ticks: 40       # animasyon suresi
+  min-height: 3.0
+  max-height: 7.0
+  drift: 1.5               # yatay sapma
+
+curse:
+  blindness-seconds: 5     # vurulana kor etkisi (0 = kapali)
+  title:
+    enabled: true
+    text: "&c&lTHOR'S CURSE"
+    subtitle: ""
+    fade-in-ticks: 5
+    stay-ticks: 80
+    fade-out-ticks: 20
+
+launch-victim-y: 0.6       # vurulan kisi havaya firlar (0 = kapali)
+cooldown-seconds: 3        # ayni oyuncu icin bekleme suresi
+affect-mobs: false         # true = moblara da calissin
+
+messages:
+  given: "&bMjölnir &7verildi!"
+  given-other: "&b%player% &7oyuncusuna Mjölnir verildi."
+  no-permission: "&cBu komutu kullanamazsın."
+  player-not-found: "&cOyuncu bulunamadı."
+  reloaded: "&aConfig yenilendi."
+  console-needs-player: "&cKonsoldan oyuncu adı yazmalısın: /thormace <oyuncu>"
