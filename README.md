@@ -1,19 +1,19 @@
 # ThorMace
 
-Purpur / Paper 1.21.11 - Thor'un çekici gibi özel mace.
+Purpur / Paper 1.21.11 - custom Thor-style mace.
 
-- `/thormace` (alias: `/thor`, `/mjolnir`) -> mace'i verir
-- `/thormace <oyuncu>` -> başkasına verir
-- `/thormace reload` -> config yeniler
+- `/thormace` (aliases: `/thor`, `/mjolnir`) - gives you the hammer
+- `/thormace <player>` - gives it to another player
+- `/thormace reload` - reloads the config
 
-Mace ile bir kişiye vurunca 5 kez yıldırım düşer ve vurulan yerin
-etrafındaki (yarıçap 5) bloklar havaya uçup geri iner. Vurulan kişiye 5 sn körlük + ekranda kırmızı THOR'S CURSE yazısı gelir.
-Gerçek bloklar
-bozulmaz (sadece görsel animasyon). Tüm ayarlar `config.yml` içinde.
+Hitting a player or mob with the hammer strikes it with lightning 5 times,
+blinds it for 5 seconds (players also see a red THOR'S CURSE title) and
+blasts the blocks within a radius of 5 into the air. Real blocks are never
+changed - the animation is purely visual. Everything is configurable in `config.yml`.
 
-## Derleme
-GitHub'a yükle -> Actions -> Build -> `ThorMace` artifact (jar).
-Yerelde: `mvn package`
+## Build
+Push to GitHub -> Actions -> Build -> download the `ThorMace` artifact (jar).
+Locally: `mvn package`
 
-## Permission
-- thormace.give (op) / thormace.use (herkes) / thormace.admin (op)
+## Permissions
+- thormace.give (op) / thormace.use (everyone) / thormace.admin (op)

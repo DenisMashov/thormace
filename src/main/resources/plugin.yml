@@ -1,9 +1,8 @@
 name: ThorMace
 version: 1.0.0
-main: com.denis.thormace.ThorMace
+main: com.thormace.ThorMace
 api-version: '1.21'
-author: Denis
-description: Thor'un cekici gibi ozel mace - vurunca yildirim ve blok patlamasi.
+description: Thor-style custom mace - lightning and flying blocks on hit.
 commands:
   thormace:
     description: Thor Mace verir / config yeniler

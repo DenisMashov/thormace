@@ -1,28 +1,28 @@
-# ThorMace ayarlari
+# ThorMace configuration
 
 item:
-  name: "&b&lMjölnir"
+  name: "&b&lThor's Hammer"
   lore:
-    - "&7Thor'un çekici."
-    - "&eVurduğun kişiye yıldırım düşer!"
+    - "&7The hammer of Thor."
+    - "&eStrike your enemies with lightning!"
 
 lightning:
-  count: 5                 # kac kez yildirim
-  interval-ticks: 6        # yildirimlar arasi sure (20 tick = 1 sn)
-  damage-per-strike: 3.0   # her yildirim icin ekstra hasar (1.5 kalp). 0 = hasar yok
-  real: false              # true = gercek yildirim (yangin + vurana da zarar verebilir)
+  count: 5                 # number of lightning strikes
+  interval-ticks: 6        # delay between strikes (20 ticks = 1 second)
+  damage-per-strike: 3.0   # extra damage per strike (3.0 = 1.5 hearts). 0 = no damage
+  real: false              # true = real lightning (fire + can hurt the attacker)
 
 blast:
-  radius: 5                # blok ucusma yaricapi
-  max-blocks: 200          # performans icin ust sinir
-  duration-ticks: 40       # animasyon suresi
+  radius: 5                # radius of the flying blocks effect
+  max-blocks: 200          # upper limit for performance
+  duration-ticks: 40       # animation length
   min-height: 3.0
   max-height: 7.0
-  drift: 1.5               # yatay sapma
+  drift: 1.5               # horizontal drift
 
 curse:
-  blindness-seconds: 5     # vurulana kor etkisi (0 = kapali)
-  title:
+  blindness-seconds: 5     # blindness for the victim (0 = disabled)
+  title:                   # title is only shown to players
     enabled: true
     text: "&c&lTHOR'S CURSE"
     subtitle: ""
@@ -30,14 +30,14 @@ curse:
     stay-ticks: 80
     fade-out-ticks: 20
 
-launch-victim-y: 0.6       # vurulan kisi havaya firlar (0 = kapali)
-cooldown-seconds: 3        # ayni oyuncu icin bekleme suresi
-affect-mobs: false         # true = moblara da calissin
+launch-victim-y: 0.6       # launches the victim upwards (0 = disabled)
+cooldown-seconds: 3        # per-player cooldown
+affect-mobs: true          # false = only works on players
 
 messages:
-  given: "&bMjölnir &7verildi!"
-  given-other: "&b%player% &7oyuncusuna Mjölnir verildi."
-  no-permission: "&cBu komutu kullanamazsın."
-  player-not-found: "&cOyuncu bulunamadı."
-  reloaded: "&aConfig yenilendi."
-  console-needs-player: "&cKonsoldan oyuncu adı yazmalısın: /thormace <oyuncu>"
+  given: "&bThor's Hammer &7has been given!"
+  given-other: "&7Gave Thor's Hammer to &b%player%&7."
+  no-permission: "&cYou don't have permission."
+  player-not-found: "&cPlayer not found."
+  reloaded: "&aConfig reloaded."
+  console-needs-player: "&cFrom console use: /thormace <player>"
